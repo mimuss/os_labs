@@ -1,0 +1,14 @@
+#!/bin/bash
+if test -f $1
+then
+	echo "файл"
+	echo "do you wanna to delete file? (y/n)"
+	read answer
+	if [[ $answer = $"y" ]]
+		then
+		echo "deleting"
+		rm answer
+	fi
+else
+	echo "не файл"
+fi
